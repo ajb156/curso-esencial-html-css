@@ -41,7 +41,7 @@ html {
 
 body {
   color: var(--gray30);
-  font-family: charter;
+  font-family: 'Roboto', sans-serif;;
 }
 
 header {
