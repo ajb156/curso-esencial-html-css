@@ -78,3 +78,28 @@ h2 {
 h3 {
   font-size: 1,5em;
 }
+
+pre {
+  background: #FEC62E;
+}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../img/patron.png'); 
+  /* background-repeat: no-repeat; */
+  /* background-position: left 50px bottom 50px; */
+  height: 350px;
+}
+
+h3::before {
+  content: '-';
+}
+
+h3::after {
+  content: ' ';
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  background: var(--gray30);
+}
+
+
