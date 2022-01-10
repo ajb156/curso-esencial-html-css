@@ -45,7 +45,15 @@ body {
 
 header {
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  left: -188px;
+  top: 64px;
+}
+
+.header-content {
+  position: relative;
 }
 
 header a {
@@ -86,10 +94,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1, 5em;
-  font-weight: normal;
+  font-size: 1.5em;
   margin-top: 16px;
   margin-bottom: 24px;
+  font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre {
@@ -103,7 +114,6 @@ blockquote {
   font-size: 24px;
   margin: 32px 0;
   padding-left: 16px;
-
   border-left: 5px solid var(--gray30);
 }
 
@@ -114,9 +124,7 @@ blockquote span {
 blockquote span::before {
   content: "- ";
 }
-
-.main {
-  border: 1px solid red;
+.hero {
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.3),
@@ -124,10 +132,8 @@ blockquote span::before {
     ),
     url("../img/patron.png");
 }
-
 .main-content {
   background: white;
-  padding: 20px;
 }
 
 .wrapper {
@@ -144,6 +150,7 @@ blockquote span::before {
 .section-content {
   counter-reset: titleList;
   margin-top: 164px;
+  position: relative;
 }
 
 .section-content:first-of-type {
@@ -164,7 +171,7 @@ blockquote span::before {
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -172,11 +179,14 @@ blockquote span::before {
 }
 
 .section-content h3::after {
-  content: " ";
-  display: inline-block;
-  width: 32px;
+  content: "";
+  width: 80px;
   height: 4px;
   background: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .title {

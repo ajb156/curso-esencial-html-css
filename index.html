@@ -14,32 +14,39 @@
     <title>El Blog de adolfob</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <!-- Estas etiquetas deben ir una dentro de la otra -->
-        <!-- Usamos open para mantener la lista abierta -->
-        <details open>
-          <summary>Setup</summary>
-          <ol>
-            <li><a href="#google-chrome">Google Chrome</a></li>
-            <li><a href="#vs-code">VS Code</a></li>
-            <li><a href="#figma">Figma</a></li>
-            <li><a href="#github">GitHub</a></li>
-          </ol>
-        </details>
-        <details>
-          <summary>Conceptos Esenciales del desarrollo web</summary>
-          <ol>
-            <li>Qué es HTML</li>
-            <li>Etiquetas</li>
-            <li>DOM</li>
-            <li>Semánica</li>
-            <li>Atrhibutos</li>
-            <li>Qué es CSS</li>
-          </ol>
-        </details>
-      </nav>
-    </header>
+    <div class="hero"></div>
+    <div class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <header>
+            <nav>
+              <!-- Estas etiquetas deben ir una dentro de la otra -->
+              <!-- Usamos open para mantener la lista abierta -->
+              <details open>
+                <summary>Setup</summary>
+                <ol>
+                  <li><a href="#google-chrome">Google Chrome</a></li>
+                  <li><a href="#vs-code">VS Code</a></li>
+                  <li><a href="#figma">Figma</a></li>
+                  <li><a href="#github">GitHub</a></li>
+                </ol>
+              </details>
+              <details>
+                <summary>Conceptos Esenciales del desarrollo web</summary>
+                <ol>
+                  <li>Qué es HTML</li>
+                  <li>Etiquetas</li>
+                  <li>DOM</li>
+                  <li>Semánica</li>
+                  <li>Atrhibutos</li>
+                  <li>Qué es CSS</li>
+                </ol>
+              </details>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </div>
     <main class="main">
       <div class="wrapper">
         <div class="main-content">
@@ -52,7 +59,6 @@
           <hr />
           <section class="section-content">
             <h2>Setup</h2>
-
             <img
               src="img/google-chrome.png"
               alt="Logo google chrome"
